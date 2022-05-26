@@ -18,7 +18,7 @@
 </h4>
 <br>
 <h3 align = "center">
-<a href="https://matealves.github.io/relogio/" target="_blank">Acesse o site - clique aqui!
+<a href="https://matealves.github.io/relogio_analogico/" target="_blank">Acesse o site - clique aqui!
 </a> 
 </h3>
 
