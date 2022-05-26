@@ -5,12 +5,12 @@
 <br>
 
 <div align = "center">
-<h1>Relógio</h1>
+<h1>Relógio - Dark Mode</h1>
 </div>
 
 <h3 align = "center">
   Projeto desenvolvido para estudos
-  <br>Layout moderno
+  <br>Layout moderno e dinâmico
 </h3>
 
 <h4 align = "center">
