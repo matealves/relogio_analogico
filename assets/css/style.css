@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  transition: all 0.5s ease;
 }
 
 :root {
@@ -18,7 +17,7 @@
   --box-shadow-toggle: inset 0 4px 12px rgba(0, 0, 0, 0.05),
     inset 0 3px 3px rgba(255, 255, 255, 0.16),
     inset 0 -3px 6px rgba(228, 228, 228, 0.22);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 html.dark {
@@ -30,7 +29,7 @@ html.dark {
   --background-toggle: #222;
   --box-shadow-toggle: inset 0 8px 60px rgba(0, 0, 0, 0.1),
     inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
   background-color: #2b2b2b;
 }
 
@@ -136,21 +135,21 @@ body {
   background-color: var(--secondary);
   width: 5px;
   height: 55px;
-  transform: translate(-50%, -100%) rotate(0deg);
+  /* transform: translate(-50%, -100%) rotate(0deg); */
 }
 
 .minute {
   background-color: var(--secondary);
   width: 3px;
   height: 70px;
-  transform: translate(-50%, -100%) rotate(0deg);
+  /* transform: translate(-50%, -100%) rotate(0deg); */
 }
 
 .second {
   background-color: #c53a3a;
   width: 2px;
   height: 80px;
-  transform: translate(-50%, -100%) rotate(0deg);
+  /* transform: translate(-50%, -100%) rotate(0deg); */
 }
 
 .center-point {
@@ -162,6 +161,56 @@ body {
   transform: translate(-50%, -50%) rotate(0deg);
   background-color: #c53a3a;
   border-radius: 50%;
+}
+
+.indicadores div {
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background:#FFF;
+}
+
+.indicadores div:nth-child(1) {
+  transform: rotate(30deg) translateY(-85px);
+}
+.indicadores div:nth-child(2) {
+  transform: rotate(60deg) translateY(-85px);
+}
+.indicadores div:nth-child(3) {
+  /* background: var(--secondary); */
+  transform: rotate(90deg) translateY(-85px);
+}
+.indicadores div:nth-child(4) {
+  transform: rotate(120deg) translateY(-87px);
+}
+.indicadores div:nth-child(5) {
+  transform: rotate(150deg) translateY(-88px);
+}
+.indicadores div:nth-child(6) {
+  /* background: var(--secondary); */
+  transform: rotate(180deg) translateY(-90px);
+}
+.indicadores div:nth-child(7) {
+  transform: rotate(210deg) translateY(-90px);
+}
+.indicadores div:nth-child(8) {
+  transform: rotate(240deg) translateY(-89px);
+}
+.indicadores div:nth-child(9) {
+  /* background: var(--secondary); */
+  transform: rotate(270deg) translateY(-87px);
+}
+.indicadores div:nth-child(10) {
+  transform: rotate(300deg) translateY(-86px);
+}
+.indicadores div:nth-child(11) {
+  transform: rotate(330deg) translateY(-85px);
+}
+.indicadores div:nth-child(12) {
+  /* background: var(--secondary); */
+  transform: rotate(360deg) translateY(-85px);
 }
 
 footer {

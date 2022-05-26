@@ -75,11 +75,7 @@ setInterval(() => {
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
 
-  hoursE1.style.transform = `translate(-50%, -100%) rotate(${hour * 30}deg)`;
-  minutesE1.style.transform = `translate(-50%, -100%) rotate(${
-    minutes * 6
-  }deg)`;
-  secondsE1.style.transform = `translate(-50%, -100%) rotate(${
-    seconds * 6
-  }deg)`;
+  hoursE1.style.transform = `translate(-50%, -100%) rotateZ(${hour*30}deg)`;
+  minutesE1.style.transform = `translate(-50%, -100%) rotateZ(${minutes*6}deg)`;
+  secondsE1.style.transform = `translate(-50%, -100%) rotateZ(${seconds*6}deg)`;
 }, 1000);
