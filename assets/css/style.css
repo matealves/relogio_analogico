@@ -135,21 +135,21 @@ body {
   background-color: var(--secondary);
   width: 5px;
   height: 55px;
-  /* transform: translate(-50%, -100%) rotate(0deg); */
+  transform: translate(-50%, -100%) rotate(0deg);
 }
 
 .minute {
   background-color: var(--secondary);
   width: 3px;
   height: 70px;
-  /* transform: translate(-50%, -100%) rotate(0deg); */
+  transform: translate(-50%, -100%) rotate(0deg);
 }
 
 .second {
   background-color: #c53a3a;
   width: 2px;
   height: 80px;
-  /* transform: translate(-50%, -100%) rotate(0deg); */
+  transform: translate(-50%, -100%) rotate(0deg);
 }
 
 .center-point {
@@ -169,7 +169,7 @@ body {
   position: absolute;
   width: 2px;
   height: 5px;
-  background:#FFF;
+  background: #fff;
 }
 
 .indicadores div:nth-child(1) {
@@ -229,7 +229,6 @@ footer a {
   position: relative;
   text-decoration: none;
   color: var(--secondary);
-  /* transition: all 0.2s; */
   padding-bottom: 2px;
 }
 
