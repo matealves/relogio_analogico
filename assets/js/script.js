@@ -23,18 +23,6 @@ toggle.addEventListener("click", () => {
   }
 });
 
-//BOTÃO SIMPLES
-// toggle.addEventListener("click", () => {
-//   const html = document.querySelector("html");
-//   if (html.classList.contains("dark")) {
-//     html.classList.remove("dark");
-//     toggle.innerHTML = "Dark Mode";
-//   } else {
-//     html.classList.add("dark");
-//     toggle.innerHTML = "Light Mode";
-//   }
-// });
-
 const days = [
   "Domingo",
   "Segunda",
@@ -59,7 +47,7 @@ const months = [
   "Dez",
 ];
 
-setInterval(() => {
+function updateClock() {
   const time = new Date();
   const day = time.getDay();
   const date = time.getDate();
@@ -75,7 +63,14 @@ setInterval(() => {
     minutes < 10 ? `0${minutes}` : minutes
   } ${ampm}`;
 
-  hoursE1.style.transform = `translate(-50%, -100%) rotateZ(${hour*30}deg)`;
-  minutesE1.style.transform = `translate(-50%, -100%) rotateZ(${minutes*6}deg)`;
-  secondsE1.style.transform = `translate(-50%, -100%) rotateZ(${seconds*6}deg)`;
-}, 1000);
+  hoursE1.style.transform = `translate(-50%, -100%) rotateZ(${hour * 30}deg)`;
+  minutesE1.style.transform = `translate(-50%, -100%) rotateZ(${
+    minutes * 6
+  }deg)`;
+  secondsE1.style.transform = `translate(-50%, -100%) rotateZ(${
+    seconds * 6
+  }deg)`;
+}
+
+setInterval(updateClock, 1000);
+updateClock();
