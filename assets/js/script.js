@@ -58,10 +58,13 @@ function updateClock() {
   // const hourIn12Hour = hour % 12;
   const ampm = hour > 12 ? "PM" : "AM";
 
-  dateE1.innerHTML = `${days[day]}, ${date} ${months[month]}`;
-  timeE1.innerHTML = `${hour}:${
-    minutes < 10 ? `0${minutes}` : minutes
-  } ${ampm}`;
+  dateE1.innerHTML = `${days[day]}, ${String(date).padStart(2, 0)} ${
+    months[month]
+  }`;
+  timeE1.innerHTML = `${String(hour).padStart(2, 0)}:${String(minutes).padStart(
+    2,
+    0
+  )} ${ampm}`;
 
   hoursE1.style.transform = `translate(-50%, -100%) rotateZ(${hour * 30}deg)`;
   minutesE1.style.transform = `translate(-50%, -100%) rotateZ(${
